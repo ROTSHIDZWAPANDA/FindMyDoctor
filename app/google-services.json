@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "901242375936",
+    "project_id": "new-find-my-doctor",
+    "storage_bucket": "new-find-my-doctor.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:901242375936:android:54b369b31aebd7356dade5",
+        "android_client_info": {
+          "package_name": "com.example.findmydoctor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "901242375936-t6aifu00afbgmkle3ts3hl2skklcjv9c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUUXkTMGQIH0tKpClERiAf3AA36R4hAO0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "901242375936-t6aifu00afbgmkle3ts3hl2skklcjv9c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

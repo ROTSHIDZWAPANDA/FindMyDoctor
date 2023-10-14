@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookAppointmentFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BOOK CONSULTATION"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="1dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WITH"
+            android:textSize="20sp"
+            android:layout_marginTop="1dp"
+            android:layout_gravity="center"/>
+
+
+
+        <!-- Surgery Name -->
+        <TextView
+            android:id="@+id/surgeryNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Surgery: SurgeryName"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="1dp"
+            android:layout_gravity="center"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/purple_200"
+            android:layout_margin="5dp"/>
+
+
+
+        <!-- Doctor's Information -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doctor's Information:"
+            android:textSize="18sp"
+            android:layout_marginTop="1dp"/>
+
+        <!-- Doctor's Name -->
+        <TextView
+            android:id="@+id/doctorNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doctor: LastName, FirstName"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"/>
+
+
+
+
+
+        <!-- User's Information -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Patient's Information:"
+            android:textSize="18sp"
+            android:layout_marginTop="3dp"
+            />
+
+        <!-- User's Name -->
+        <TextView
+            android:id="@+id/userNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User: FirstName LastName"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"/>
+
+        <!-- Select Date -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Date:"
+            android:textSize="18sp"
+            android:layout_marginTop="11dp"/>
+
+        <EditText
+            android:id="@+id/dateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/item_bg"
+            android:clickable="true"
+            android:focusable="false"
+            android:hint="Select Date"
+            android:paddingLeft="8dp"
+            android:minHeight="48dp" />
+
+        <!-- DatePicker (Initially Hidden) -->
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <!-- Select Consultation Type -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Consultation Type:"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Consultation Type RadioGroup -->
+        <RadioGroup
+            android:id="@+id/consultationTypeRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Virtual Consultation RadioButton -->
+            <RadioButton
+                android:id="@+id/virtualConsultationRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Virtual Consultation"
+                android:textSize="16sp"/>
+
+            <!-- Physical Consultation RadioButton -->
+            <RadioButton
+                android:id="@+id/physicalConsultationRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Physical Consultation"
+                android:textSize="16sp"/>
+        </RadioGroup>
+
+        <!-- Select Time -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Time:"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"/>
+
+        <!-- TimePicker -->
+        <Spinner
+            android:id="@+id/timeSlotSpinner"
+            android:layout_width="match_parent"
+            android:background="@drawable/item_bg"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:minHeight="48dp" />
+        <!-- Problem Description -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Problem Description:"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/problemDescriptionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Problem Description"
+            android:background="@drawable/item_bg"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="8dp"
+            android:minHeight="48dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:padding="3dp">
+            <Button
+                android:id="@+id/CancelAppointmentButton"
+                android:layout_width="180dp"
+                android:layout_height="64dp"
+                android:text="Cancel"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="2dp"
+                />
+
+
+
+
+        <!-- Book Appointment Button -->
+        <Button
+            android:id="@+id/bookAppointmentButton"
+            android:layout_width="180dp"
+            android:layout_height="64dp"
+            android:text="Book Appointment"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="2dp"
+           />
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

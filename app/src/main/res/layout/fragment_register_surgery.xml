@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterSurgery"
+    android:background="@drawable/hearder_bg_6">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/LayoutPending"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registered Surgery status"
+                    android:textSize="16sp"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/PendingSurgery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:padding="0dp"
+                    />
+                <Button
+                    android:id="@+id/btnRegisterSurg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_btn_bg"
+                    android:text="Register Surgery"
+                    android:layout_marginTop="30dp"/>
+                <Button
+                    android:id="@+id/btnRCancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_btn_bg"
+                    android:text="Cancel"
+                    android:layout_marginTop="30dp"/>
+
+
+
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LayoutRegister"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register Surgery"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/surgeryName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/clr_transparent_white"
+                android:hint="Surgery Name"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="15dp"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"/>
+
+
+                <EditText
+                    android:id="@+id/Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/clr_transparent_white"
+                    android:hint="Address"
+                    android:inputType="text"
+                    android:paddingLeft="15dp"
+                    android:textColorHint="@color/white" />
+
+
+            <Spinner
+                android:id="@+id/experienceSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="15dp"
+                android:background="@color/clr_transparent_white"
+                android:prompt="@array/select_experience"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"/>
+
+
+            <Spinner
+                android:id="@+id/language"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/clr_transparent_white"
+                android:paddingLeft="15dp"
+                android:prompt="@array/array_languages"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+            <Spinner
+                android:id="@+id/practioner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/clr_transparent_white"
+                android:paddingLeft="15dp"
+                android:prompt="@array/array_specialist"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+            <EditText
+                android:id="@+id/Cards"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/clr_transparent_white"
+                android:hint="Insuarence Accepted"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="15dp"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"/>
+
+            <Spinner
+                android:id="@+id/Telemedicine"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/clr_transparent_white"
+                android:prompt="@array/array_telemedicine"
+                android:paddingLeft="15dp"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"/>
+
+            <EditText
+                android:id="@+id/Descption"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/clr_transparent_white"
+                android:hint="Medical Interest And Approaches"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="15dp"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"/>
+
+            <EditText
+                android:id="@+id/Consultationfees"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/clr_transparent_white"
+                android:hint="Consultation Fee"
+                android:inputType="number|numberDecimal"
+                android:paddingLeft="15dp"
+                android:textColorHint="@color/white"
+
+                />
+
+            <Button
+                android:id="@+id/buttonUploadProof"
+                android:layout_width="match_parent"
+                android:background="@drawable/white_btn_bg"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Upload Proof of Qualification and License (PDF)" />
+
+            <GridView
+                android:id="@+id/gridViewPdf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="8dp"
+                android:numColumns="2"
+                android:verticalSpacing="8dp" />
+
+            <Button
+                android:id="@+id/buttonRegisterSurgery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_btn_bg"
+                android:layout_marginTop="20dp"
+                android:text="Register Surgery" />
+            <Button
+                android:id="@+id/RCancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_btn_bg"
+                android:text="Cancel"
+                android:layout_marginTop="30dp"/>
+
+
+        </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="role_array"
+        >
+        <item >Select Role</item>
+        <item>Patient</item>
+        <item>Doctor</item>
+    </string-array>
+    <string-array name="day_of_week_array" >
+        <item >SELECT DAY</item>
+        <item >MONDAY</item>
+        <item>TUESDAY</item>
+        <item>WEDNESDAY</item>
+        <item >THURSDAY</item>
+        <item>FRIDAY</item>
+        <item>SATURDAY</item>
+        <item>SUNDAY</item>
+
+
+
+
+
+    </string-array>
+    <string-array name="select_experience">
+        <item >SELECT YEAR OF EXPERIENCE</item>
+        <item>0-1 years</item>
+        <item>2-4 years</item>
+        <item>5+ years</item>
+    </string-array>
+    <string-array name="array_languages">
+        <item >SELECT LANGUAGE</item>
+        <item>VENDA</item>
+        <item>SIPEDI</item>
+        <item>ENGLISH</item>
+        <item>AFRIKAANS</item>
+        <item>ZULU</item>
+        <item>TSONGA</item>
+        <item>XHOSA</item>
+        <item>NDEBELE</item>
+    </string-array>
+    <string-array name="array_telemedicine">
+        <item >SELECT TELEMEDICINE</item>
+        <item>VIRTUAL CONSULTATION ONLY</item>
+        <item>PHYSICAL CONSULTATION ONLY</item>
+        <item>BOTH</item>
+    </string-array>
+    <string-array name="array_specialist">
+        <item >SELECT SPECIALIST</item>
+        <item>DENTIST</item>
+        <item>OPTOMETRIST</item>
+        <item>ETCH</item>
+        <item>MORE</item>
+    </string-array>
+
+</resources>

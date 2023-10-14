@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:padding="10dp">
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/user"/>
+
+    <TextView
+        android:id="@+id/patientNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/profileImageView"
+        android:text="phandavhudzi rotshidzwa" />
+
+    <TextView
+        android:id="@+id/lastMessageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/patientNameTextView"
+        android:layout_toEndOf="@id/profileImageView"
+        android:text="Good morning"
+        />
+
+    <TextView
+        android:id="@+id/numberOfUnreadmsg"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/circle_bg"
+        android:text="1"
+        android:textAlignment="center" />
+
+
+</RelativeLayout>

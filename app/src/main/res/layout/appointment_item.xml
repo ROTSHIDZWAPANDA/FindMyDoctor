@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@drawable/item_bg"
+    android:layout_margin="10dp">
+    <TextView
+        android:id="@+id/patientName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PHANDAVHUDZI ROTSHIDZWA"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/appointmentDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date: October 16, 2023"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:id="@+id/appointmentTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time: 07:15 - 07:20"
+        android:layout_margin="5dp"/>
+    <TextView
+        android:id="@+id/consultationtype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Virtual Consultation"
+        android:layout_margin="5dp"/>
+    <TextView
+        android:id="@+id/problemDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Problem: Headache"
+        android:layout_margin="5dp"/>
+    <TextView
+        android:id="@+id/paymentstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paid"
+        android:layout_margin="5dp"/>
+    <TextView
+        android:id="@+id/appointmentStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="accepted"
+        android:layout_margin="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <Button
+            android:id="@+id/acceptButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accept"
+            android:layout_marginRight="5dp"/>
+
+    <Button
+        android:id="@+id/rescheduleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reschedule"
+        android:layout_marginRight="5dp"/>
+
+
+
+    <Button
+        android:id="@+id/rejectButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reject"
+        android:layout_marginRight="5dp"
+        />
+    </LinearLayout>
+
+</LinearLayout>

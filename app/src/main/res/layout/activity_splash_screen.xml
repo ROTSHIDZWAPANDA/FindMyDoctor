@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SplashScreen">
+
+    <LinearLayout
+        android:id="@+id/layoutOnee"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            app:lottie_rawRes="@raw/two"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:gravity="center"
+            android:text="Find My Doctor"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="40dp"
+            android:gravity="center"
+            android:text="Browse through a vast network of experienced healthcare professionals. Filter by specialty, location, and reviews to find the right match for your needs."
+            android:textSize="14sp"
+            android:textStyle="italic"
+            />
+        <Button
+            android:id="@+id/nextOne"
+            android:layout_width="180dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:text="NEXT"/>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layoutTwoo"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            app:lottie_rawRes="@raw/three"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:gravity="center"
+            android:text="Book Appointment"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="40dp"
+            android:gravity="center"
+            android:text="Say goodbye to long waiting times! Schedule appointments with just a few taps and receive timely reminders."
+            android:textSize="14sp"
+            android:textStyle="italic"
+            />
+        <Button
+            android:id="@+id/nextTwo"
+            android:layout_width="180dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:text="GET STARTED"/>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

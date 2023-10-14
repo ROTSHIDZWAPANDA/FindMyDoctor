@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DoctorAvailability"
+    android:background="@drawable/hearder_bg_6"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Day of the week selection -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Day:"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/dayOfWeekSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_btn_bg"
+            android:layout_marginTop="8dp"
+            android:entries="@array/day_of_week_array"
+            android:minHeight="48dp" />
+
+        <!-- Availability time selection -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Availability:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="start time"
+                    />
+
+                <TimePicker
+                    android:id="@+id/startTimePicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="0"
+                    android:timePickerMode="spinner"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="End time "
+                    />
+                <TimePicker
+                    android:id="@+id/endTimePicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:timePickerMode="spinner"
+                    android:layout_marginStart="8dp" />
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <!-- Buttons for adding and managing availability slots -->
+        <Button
+            android:id="@+id/addAvailabilityButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Availability"
+            android:background="@drawable/white_btn_bg"
+            android:layout_marginTop="16dp" />
+
+        <!-- Display the doctor's current availability -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/availabilityRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_availability"
+            android:layout_marginTop="0dp" />
+
+    </LinearLayout>
+
+
+</FrameLayout>
